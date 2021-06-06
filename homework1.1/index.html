@@ -2,23 +2,28 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <script src="js/main.js"> </script>
-
-    <script defer src="<https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js>"></script>
-    <script defer src="js/common.js"> </script>
-    <script defer src="js/alarmclock.js"> </script>
-    <script defer src="js/stopwatch.js"> </script>
-    <script defer src="js/datecalc.js"> </script>
-    <script defer src="js/timer.js"> </script>
-    <!-- остальной код -->
+    <script tipe="module" src="js/form.js"></script>
 </head>
 
 <body>
 
-    <!-- остальной код -->
 
+    <form id="dateForm">
+        <h2>Калькулятор дат</h2>
+        <label for="date1">
+            <input type="date" id="date1" name="date1">
+        </label>
+        <label for="date2">
+            <input type="date" id="date2" name="date2">
+        </label>
+        <button type="submit">Рассчитать промежуток</button>
+    </form>
+    <p ciass="message"> </p>
 </body>
 
 </html>
