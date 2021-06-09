@@ -1,7 +1,7 @@
 import addMessage, { resetError as resetMessage, renderDiff } from './common.js';/*дефолтный импорт*/ 
 import { diffDates } from './calc.js';
 /*точка входа*/
-const form = document.getElementById('formDate');
+const form = document.getElementById('dateForm');
 
 form.addEventListener( 'submit', (evt) => {
     evt.preventDefault();
